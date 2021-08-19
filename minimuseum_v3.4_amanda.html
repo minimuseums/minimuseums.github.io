@@ -1,0 +1,70 @@
+<html><head>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+
+
+</head>
+<body>
+<div id="panorama" class="pnlm-container" tabindex="0">
+    <div class="pnlm-ui pnlm-grab">
+        <div class="pnlm-dragfix"></div>
+        <span class="pnlm-about-msg"><a href="https://pannellum.org/" target="_blank">Pannellum</a> 2.5.6</span>
+      <div class="pnlm-sprite pnlm-hot-spot-debug-indicator" style="display: block;">
+        </div>
+        <div class="pnlm-panorama-info" style="display: none;">
+            <div class="pnlm-title-box"></div><div class="pnlm-author-box">
+            </div>
+        </div>
+
+            <div class="pnlm-load-box" style="display: none;"><p>Loading...</p>
+                <div class="pnlm-lbox"><div class="pnlm-loading">
+                </div>
+            </div>
+                <div class="pnlm-lbar"><div class="pnlm-lbar-fill" style="width: 100%;">
+                </div>
+            </div>
+            <p class="pnlm-lmsg"></p>
+        </div>
+            <div class="pnlm-error-msg pnlm-info-box">
+            </div>
+            <div class="pnlm-controls-container">
+                <div class="pnlm-zoom-controls pnlm-controls" style="display: block;">
+                    <div class="pnlm-zoom-in pnlm-sprite pnlm-control">
+                    </div>
+                    <div class="pnlm-zoom-out pnlm-sprite pnlm-control">
+                    </div>
+                </div>
+                    <div class="pnlm-fullscreen-toggle-button pnlm-sprite pnlm-fullscreen-toggle-button-inactive pnlm-controls pnlm-control" style="display: block;">
+                    </div>
+                </div>
+                    <div class="pnlm-load-button" style="display: none;">
+                        <p>Click to<br>Load<br>Panorama</p>
+                    </div>
+                        <div class="pnlm-compass pnlm-controls pnlm-control" style="display: none;">
+                        </div>
+                    </div>
+                        <div class="pnlm-render-container">
+                            <canvas width="360" style="height: 100%; width: 100%;" height="947"></canvas>
+
+                        </div>
+                    </div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://static1.squarespace.com/static/5fbf3e38116eb00e3c428a34/t/611d4d4d7c44d800a1ab37b0/1629310297087/minimuseum_amanda_seigel.JPG",
+"autoLoad": true,
+"yaw": 0, //this is supposed to set the rotation by the exhibit.
+
+
+"orientationOnByDefault":true,
+"hotSpotDebug": true,
+    "hotSpots": [
+    ]
+});
+</script>
+</body></html>
